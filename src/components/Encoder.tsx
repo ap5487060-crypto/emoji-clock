@@ -403,7 +403,11 @@ export const Encoder: React.FC<EncoderProps> = ({ onSendToDecoder, onToast }) =>
                           </span>
                         </div>
                         <div className="text-[10px] text-sky-300 underline break-all opacity-80">
-                          {window.location.origin}/#m=...
+                          {instantUrl ? (
+                            instantUrl.length > 55 ? instantUrl.slice(0, 52) + '...' : instantUrl
+                          ) : (
+                            `${typeof window !== 'undefined' ? window.location.origin : 'https://emoji-clock.vercel.app'}/#m=...`
+                          )}
                         </div>
                       </div>
                     )}
