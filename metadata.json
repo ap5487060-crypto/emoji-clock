@@ -1,0 +1,6 @@
+{
+  "name": "EmojiCloak - Secret Emoji Cipher & Steganography",
+  "description": "Convert private messages into innocent emojis with invisible zero-width steganography or emoji ciphers for confidential social media chats.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
